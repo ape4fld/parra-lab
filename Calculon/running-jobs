@@ -19,3 +19,7 @@ The basics:
 
 You can check the status of your jobs by typing on the main node:
 >> squeue
+
+Important:
+•	You can run a maximum of 3 jobs simultaneously, and the maximum time for one job is 5 days. 
+•	The max cores per job is 20, and the max RAM per job is 20G.
