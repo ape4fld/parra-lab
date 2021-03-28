@@ -1,0 +1,31 @@
+The UTM High Performance Computing (HPC) cluster is available for faculty and grad students, but accounts need to be set up.
+https://wiki.utm.utoronto.ca/display/UHPC/UTM+High+Performance+Computing
+
+Students can access the cluster (either at UTM with wifi or anywhere else) by using a Global Protect VPN (see details on the webpage above).
+Students can access the cluster without VPN by using a wired connection.
+Faculty can access the cluster at UTM without the VPN.
+
+To log in use your UTORid credentials on the terminal:
+Example:
+ssh utorid at calculon.utm.utoronto.ca
+
+Each user has its own 'home' and 'scratch' directories. When you log in you'll be in your home directory. You can navigate to your scratch directory by typing the following command:
+cd /scratch/utorid/
+
+And you can go back to your home directory by typing:
+cd /home/utorid/
+
+You can create new directories within your home or scratch directories by using the 'mkdir' command followed by the name of the directory you want to create.
+
+You can learn more about how much space each user has in the scratch and home directories at the UTM HPC cluster website written above, but basically:
+- you want to have your input and output files within your scratch directory, and you can copy the clean results for storage in your home directory.
+- the scratch directory is temporary, meaning that if a file is untouched for 30 days it will be automatically deleted.
+- you can store your scripts in your home directory.
+
+The main node of the UTM HPC cluster should be used only for scripting (e.g. nano or emacs), to copy/move/list files, create/delete files or directories.
+If you want to use other commands, you should set up jobs via SLURM, even if they are simple tasks, and especially if you are loading modules. They will run instantaneously and there is no waiting/queueing time!
+
+Important:
+If you disrupt the main node you will get a warning the first time.
+The second time you’ll also get a warning (cc’ed to the PI).
+The third time you will not be able to use the UTM cluster anymore.
