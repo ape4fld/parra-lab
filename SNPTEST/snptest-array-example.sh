@@ -7,8 +7,8 @@
 #SBATCH --ntasks=3
 #SBATCH --mem=5gb
 #SBATCH --time=12:0:0
-#SBATCH --output=my-snptest-job-1.out
-#SBATCH --error=my-snptest-job-1.err
+#SBATCH --output=/scratch/my-snptest-job-1.out
+#SBATCH --error=/scratch/my-snptest-job-1.err
 
 module load snptest/2.5.2
 
