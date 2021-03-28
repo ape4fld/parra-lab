@@ -1,0 +1,21 @@
+You can follow the instructions given on the UTM cluster website too:
+https://wiki.utm.utoronto.ca/pages/viewpage.action?pageId=22183950
+
+The basics:
+•	Your scripts should have the .sh extension. If you use nano, you can create a job file in your current directory by typing the following:
+    >> nano myjob.sh 
+    This command will open a nano file named 'myjob.sh', where you can write your SLURM job. Alternatively, you can create a simple text file (e.g. Notepad)
+    on your local computer and then upload it to the Calculon server. However, if you use Windows, you will have to convert your Notepad .sh file from 'dos' to 'unix' style,
+    before uploading it into the cluster.
+    
+•	Your script should have on the first line the following:
+#!/bin/bash
+
+•	Your script should have a header (#SBATCH) after the first line, followed by your commands.
+  The header includes information about time time set for the job, the notifications you may want to receive, the memory to use, as well as where to save the log and error outputs.
+
+•	After having your job file ready, you can run it on the cluster by typing on the main node:
+    >> sbatch myjob.sh
+
+You can check the status of your jobs by typing on the main node:
+>> squeue
