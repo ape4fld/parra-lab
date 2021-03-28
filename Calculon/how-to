@@ -9,7 +9,8 @@ To log in use your UTORid credentials on the terminal:
 Example:
 ssh utorid at calculon.utm.utoronto.ca
 
-Each user has its own 'home' and 'scratch' directories. When you log in you'll be in your home directory. You can navigate to your scratch directory by typing the following command:
+Each user has its own 'home' and 'scratch' directories. When you log in you'll be in your home directory. You can navigate to your scratch directory by 
+typing the following command:
 cd /scratch/utorid/
 
 And you can go back to your home directory by typing:
@@ -23,7 +24,8 @@ You can learn more about how much space each user has in the scratch and home di
 - you can store your scripts in your home directory.
 
 The main node of the UTM HPC cluster should be used only for scripting (e.g. nano or emacs), to copy/move/list files, create/delete files or directories.
-If you want to use other commands, you should set up jobs via SLURM, even if they are simple tasks, and especially if you are loading modules. They will run instantaneously and there is no waiting/queueing time!
+If you want to use other commands, you should set up jobs via SLURM, even if they are simple tasks, and especially if you are loading modules. They will run 
+instantaneously and there is no waiting/queueing time!
 
 Important:
 If you disrupt the main node you will get a warning the first time.
