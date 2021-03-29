@@ -17,7 +17,7 @@ echo "Removing p-value = NAs..."
 awk '$42 != "NA"' /scratch/tmp-${trait}.out > /scratch/tmp1-${trait}.out
 
 echo "Creating .tar.gz file..."
-tar -cvzf ${trait}.tar.gz /scratch/lonadura/snptest/tmp1-${trait}.out
+tar -cvzf ${trait}.tar.gz /scratch/tmp1-${trait}.out
 
 echo "Number of lines before removing pvalues == NA: "
 wc -l tmp-${trait}.out
