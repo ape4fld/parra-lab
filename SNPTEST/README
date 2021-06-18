@@ -1,4 +1,6 @@
 This directory contains a sample script to run SNPTEST, which can be run in the Calculon (UTM) server, one chromosome at a time (using arrays).
+https://www.well.ox.ac.uk/~gav/snptest/#introduction
+Input files format: https://www.well.ox.ac.uk/~gav/snptest/#input_file_formats
 
 It also contains three scripts to wrangle the raw output from SNPTEST to obtain clean files (post-snptest). The output files are a bit different between binary and quantitative
 traits, that's why there are 'bin' and 'quant' post-snptest scripts.
