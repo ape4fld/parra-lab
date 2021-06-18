@@ -28,14 +28,15 @@ study="study1"
 # here $9 must be the column with the SE.
 awk '{$9=$9*1.010643;print}' tmp-${study}-all.out > tmp2-${study}-all.out
 
-# 3. Separate the summary statistics for each study per chromosome.
+# 3. Separate the summary statistics for each study per chromosome and use as SNP ID chr:pos:A1:A2, instead of the rsid.
 # Create a file with the header named 'label.txt': CHR SNP BP A1 A2 FRQ INFO OR SE P
 for study in study1 study2 study3
 do
   for i in {1..22}
   do
           awk '{if ($1 == '$i') print $1,$2,$3,$4,$5,$6,$7,$8,$9,$10}' tmp2-${study}-all.out > tmp-${study}-chr${i}.out
-          cat label.txt tmp-${study}-chr${i}.out > ${study}-chr${i}.out
+	  awk '{print $1,$1":"$3":"$4":"$5,$3,$4,$5,$6,$7,$8,$9,$10}' tmp-${study}-chr${i}.out > tmp0-${study}-chr${i}.out
+          cat label.txt tmp0-${study}-chr${i}.out > ${study}-chr${i}.out
   done
 done
 
