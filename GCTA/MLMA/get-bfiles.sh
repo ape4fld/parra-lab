@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#SBATCH --account=your-CC-account
+#SBATCH --time=1:00:00
+#SBATCH --array=1-22
+#SBATCH --job-name=vcf-to-bfile
+#SBATCH --output=slurm-%x.out
+#SBATCH --error=slurm-%x.err
+#SBATCH --mail-user=youremail@address.com
+#SBATCH --mail-type=ALL
+#SBATCH --mem-per-cpu=15G
+#SBATCH --ntasks=3
+
+module load nixpkgs/16.09
+module load plink/2.00-10252019-avx2
+
+# can run it in Calculon server, may need to change the modules loaded.
+
+plink2 \
+        --vcf /your-path-to-the-vcf-imputed-files/${SLURM_ARRAY_TASK_ID}.vcf.gz 'dosage=DS' \
+        --exclude-if-info "INFO < 0.3" \
+        --make-bed \
+        --out /your-path-to-save-output/chr${SLURM_ARRAY_TASK_ID}
