@@ -1,0 +1,5 @@
+METASOFT is used to run meta-analysis, and the summary statistics for each study included need to be formatted first.
+http://genetics.cs.ucla.edu/meta/
+This can be done by using the 'pre-meta-step1.sh' and 'pre-meta-step2.sh', followed by the run-meta.sh script.
+Similar to running GWAS, there is afterwards a script to get clean files 'post-meta.sh'.
+Note: I've been having issues accesing Metasoft website since a few months ago!
