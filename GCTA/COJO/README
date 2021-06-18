@@ -5,3 +5,5 @@ Check out the website to adapt your summary statistics in the correct format. Sp
 On SAIGE, the effect allele is A2, whereas in GCTA-MLMA the effect allele is A1.
 The LD reference genotype file is a plink binary file of imputed genotypes with a high INFO threshold (0.8 or 0.9).
 The p-value threshold used is normally 5e-8, but can be changed. There are other options to include in the analysis, which you can check out on the software's website.
+
+After running the analysis with 'run-GCTACOJO.sh', you can merge the results for the chromosomes for which there are significant signals with 'post-GCTACOJO.sh'. 
