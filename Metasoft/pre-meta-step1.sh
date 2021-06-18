@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --account=your-CC-account
 #SBATCH --time=02:00:00
-#SBATCH --job-name=pre-meta
+#SBATCH --job-name=pre-meta-step1
 #SBATCH --output=slurm-%x.out
 #SBATCH --mail-user=youremail@address.com
 #SBATCH --mail-type=ALL
