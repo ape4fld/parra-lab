@@ -1,4 +1,4 @@
-This directory contains a sample script to run SNPTEST, which can be run in the Calculon (UTM) server, one chromosome at a time (using arrays).
+This directory contains a sample script to run SNPTEST, which can be run in the Calculon (UTM) server, using arrays to run all chromosomes in parallel.
 https://www.well.ox.ac.uk/~gav/snptest/#introduction
 Input files format: https://www.well.ox.ac.uk/~gav/snptest/#input_file_formats
 
