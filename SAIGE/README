@@ -8,3 +8,6 @@ The program for running a GWAS consists on two steps (i.e. two functions). Sampl
 
 Check the FAQ for different options of imputed genotype files. In my experience, SAIGE does not recognize the INFO flag for imputation score (Sanger Imputation Server) in VCF files,
 thus I had to convert the VCF imputed files to bgen files first (using plink2).
+
+The BGEN files need to be indexed, which can be done using the 'index-bgen.sh' script with BGENIX. The VCF files also need to be indexed, but this is done with bcftools, which 
+is installed in Compute Canada.
