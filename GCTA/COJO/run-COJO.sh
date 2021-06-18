@@ -19,7 +19,7 @@ module load gcta/1.26.0
 # GCTA is also installed in the Calculon server, you may need to modify the loaded modules if you run it there.
 
 gcta64 \
-  --bfile /your-path-to-the-plink-genotype-files/chr${SLURM_ARRAY_TASK_ID} \
+  --bfile /your-path-to-the-plink-genotype-files/chr${SLURM_ARRAY_TASK_ID}_INFO-0.8 \
   --chr ${SLURM_ARRAY_TASK_ID} \
   --cojo-file /your-path-to-gwas-summary-stats/gwas-pheno.out \
   --cojo-slct \
