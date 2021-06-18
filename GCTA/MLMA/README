@@ -1,0 +1,9 @@
+GCTA-MLMA is used to run GWAS with linear mixed models.
+https://cnsgenomics.com/software/gcta/#MLMA
+
+It does not consider dosage, and it takes as genotype input binary plink files (bed, bim, fam).
+I have included scripts to run MLMA:
+1) 'make-bfiles.sh' to convert from VCF dosage files to PLINK binary files.
+2) 'create-GRM.sh' to get a genetic relationship matrix computed in GCTA, which is also needed for MLMA.
+3) 'run-MLMA.sh' to run the actual association analysis.
+4) 'post-MLMA.sh' to merge the results from all chromosomes.
