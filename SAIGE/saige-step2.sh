@@ -21,8 +21,8 @@ singularity exec -B /home -B /project -B /scratch -B /localscratch /your-path-to
         --chrom=${SLURM_ARRAY_TASK_ID} \
         --minMAC=10 \
         --sampleFile=/your-path-to-a-list-of-sample-IDs/${array}-samples.txt \
-        --GMMATmodelFile=/your-path-to-the-RDA-output-of-step1/null-phenotype.rda \
-        --varianceRatioFile=/your-path-to-the-varianceRatio-output-of-step1/null-phenotype.varianceRatio.txt \
+        --GMMATmodelFile=/your-path-to-the-RDA-output-of-step1/null-pheno.rda \
+        --varianceRatioFile=/your-path-to-the-varianceRatio-output-of-step1/null-pheno.varianceRatio.txt \
         --SAIGEOutputFile=/your-path-to-save-the-output/chr${SLURM_ARRAY_TASK_ID}.out \
         --IsOutputAFinCaseCtrl=TRUE \
         --IsDropMissingDosages=TRUE \
