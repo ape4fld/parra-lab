@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --account=
+#SBATCH --account=your-CC-account
 #SBATCH --time=05:00:00
 #SBATCH --job-name=saige-install
 #SBATCH --output=slurm-%x.out
