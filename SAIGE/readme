@@ -1,0 +1,10 @@
+SAIGE is a software to run GWAS using logistic mixed models that consider unbalanced case/control studies 
+https://github.com/weizhouUMICH/SAIGE/#notes-for-users-before-running-jobs
+FAQ: https://github.com/weizhouUMICH/SAIGE/wiki/Genetic-association-tests-using-SAIGE#Frequently-asked-questions
+
+The program can be installed in Compute Canada (I have done it in Graham) as a docker image by using the script 'install-SAIGE.sh'
+
+The program for running a GWAS consists on two steps (i.e. two functions). Sample scripts for each step are in 'saige-step1.sh' and 'saige-step2.sh'
+
+Check the FAQ for different options of imputed genotype files. In my experience, SAIGE does not recognize the INFO flag for imputation score (Sanger Imputation Server) in VCF files,
+thus I had to convert the VCF imputed files to bgen files first (using plink2).
