@@ -17,11 +17,13 @@ module load r/3.6.1
 # before running the following script, need to run extract the top results from the TWAS, this is the example given on the FUSION website:
 # cat PGC2.SCZ.22.dat | awk 'NR == 1 || $NF < 0.05/3998' > PGC2.SCZ.22.top
 
+# Note: the results also include a plot in PDF of the results. How to read the plot is described on the FUSION website.
+
 Rscript FUSION.post_process.R \
-        --sumstats ../GWAS/${trait}-M${model}-forTWAS.sumstats.v2 \
-        --input ./TWAS_output-v2/TWAS_HC_M1.chr14.top \
-        --ref_ld_chr ../LDREF/CPTP.chr \
-        --chr 14 \
-        --out ./TWAS_output-v2/TWAS_${trait}_M${model}.chr14.cond.analysis \
+        --sumstats GWAS-summary-stats-file-adapted \
+        --input PGC2.SCZ.22.top \
+        --ref_ld_chr /path-to-LDREF/LDREF.chr \
+        --chr 14 \     # here you only need to include the chromosome of interest for the conditional analysis
+        --out /path-to-save-output/TWAS-pheno.dat.cond.analysis \
         --plot \
         --locus_win 100000
