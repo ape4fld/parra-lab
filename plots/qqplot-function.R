@@ -5,11 +5,11 @@ library(dplyr)
 
 # FUNCTION TO OBTAIN LAMBDA (GENOMIC CONTROL) AND QQPLOTS.
 # IT USES ONE FILE (with header = TRUE): 
-  #file_to_read1 = data frame with p-values only (output from post-gwas script)
+# file_to_read1 = data frame with p-values only (output from post-gwas script)
 # IT NEEDS AS INPUT THE FOLDER WHERE THIS FILE IS (path_to_folder argument)
 # IT NEEDS AS INPUT A FILE NAME FOR SAVING THE PLOT (file_name argument)
-#IT NEEDS AS INPUT THE Y COORDINATE TO OUTPUT THE LAMBDA VALUE IN THE PLOT.
-# The lambda genomic control value will be pasted in the qqplot and printed in the screen.
+# IT NEEDS AS INPUT THE Y COORDINATE TO OUTPUT THE LAMBDA VALUE IN THE PLOT.
+# The lambda genomic control value will be pasted in the qqplot and printed in the screen. The plot will be saved in the directory.
 # This function includes the installation of 2 packages: "dplyr" and "qqman".
 
 post_gwas_plots <- function(path_to_folder, file_to_read1, file_name, lambda_pos) {
