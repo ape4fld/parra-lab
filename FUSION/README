@@ -1,0 +1,6 @@
+FUSION is a program to perform TWAS from GWAS summary statistics.
+Here you can find scripts to:
+- adapt your GWAS summary statistics using an LDSC script
+- get the LD reference from genotype-level data
+- run a TWAS with FUSION
+- run a conditional TWAS with FUSION
