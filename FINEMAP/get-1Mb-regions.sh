@@ -24,6 +24,6 @@ do
 	pos1=$(echo "${pos} ${x}" | awk '{print $1 - $2}')
 	pos2=$(echo "${pos} ${x}" | awk '{print $1 + $2}')
 	awk -v tmp1=${chr} -v tmp2=${pos1} -v tmp3=${pos2} '$2==tmp1 && $3>=tmp2 && $3 <=tmp3' gwas-sumstats-for-finemap.out > tmp-sumstats-for-finemap-subset${i}.out
-	cat header-finemap.txt tmp-sumstats-for-finemap-subset${i}.out > sumstats-for-finemap-subset${i}.out  # this is the final sumstats file per region
+	cat header-finemap.txt tmp-sumstats-for-finemap-subset${i}.out > sumstats-for-finemap-subset${i}.z  # this is the final sumstats file per region
 	awk 'NR>1 {print $1}' sumstats-for-finemap-subset${i}.out > rsids-sumstats-for-finemap-subset${i}.out  # this is the list of SNPs used to extract afterwards from the genotype data
 done
