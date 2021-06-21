@@ -14,7 +14,11 @@ module load ldsc/1.0.1
 
 # Note: I have run LDSC in the Calculon server.
 
+# The munge_sumstats.py script used here is available at the LDSC github page: https://github.com/bulik/ldsc/blob/master/munge_sumstats.py
+# This script is included in the LDSC package available in Calculon.
+# More about munge sumstats: https://github.com/bulik/ldsc/wiki/Summary-Statistics-File-Format
+
 python munge_sumstats.py \
-	--sumstats gwas-summary-stats-file.out \
+	--sumstats gwas-summary-stats.out \
 	--merge-alleles bim-file-all-chrs.txt \
-	--out summary-stats-adapted
+	--out GWAS-summary-stats-file-adapted
