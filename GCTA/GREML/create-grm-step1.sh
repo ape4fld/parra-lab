@@ -3,7 +3,7 @@
 #SBATCH --account=your-CC-account
 #SBATCH --time=1:00:00
 #SBATCH --array=1-22
-#SBATCH --job-name=vcf-to-bfile
+#SBATCH --job-name=create-grm-step1
 #SBATCH --output=slurm-%x.out
 #SBATCH --error=slurm-%x.err
 #SBATCH --mail-user=youremail@address.com
