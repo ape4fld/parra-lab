@@ -1,7 +1,7 @@
 LDSC can compute several types of genome-wide analysis: https://github.com/bulik/ldsc/wiki
-I have used it to compute LDScore, to evaluate if there is inflation of p-values in the GWAS, that may be due to insufficient correction for population structure.
+I have used it to compute LDScore regression, to evaluate if there is inflation of p-values in the GWAS, that may be due to insufficient correction for population structure.
 
-The general instructions are available on their tutorial: https://github.com/bulik/ldsc/wiki/LD-Score-Estimation-Tutorial
+The general instructions are available on their tutorial: https://github.com/bulik/ldsc/wiki/Heritability-and-Genetic-Correlation
 
 Brief description of steps:
 1) Download and unzip the LD reference files (this is if using a cohort of European-related ancestry): 
