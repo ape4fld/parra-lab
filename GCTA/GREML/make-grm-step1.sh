@@ -1,28 +1,37 @@
 #!/bin/bash
 
 #SBATCH --account=your-CC-account
-#SBATCH --time=2:00:00
-#SBATCH --job-name=make-grm
+#SBATCH --time=1:00:00
+#SBATCH --array=1-22
+#SBATCH --job-name=vcf-to-bfile
 #SBATCH --output=slurm-%x.out
 #SBATCH --error=slurm-%x.err
 #SBATCH --mail-user=youremail@address.com
 #SBATCH --mail-type=ALL
-#SBATCH --mem-per-cpu=8G
-#SBATCH --ntasks=7
+#SBATCH --mem-per-cpu=15G
+#SBATCH --ntasks=3
 
-#module load StdEnv/2020
-#module load plink/2.00-10252019-avx2
+module load nixpkgs/16.09
+module load plink/2.00-10252019-avx2
 
-# first need to make a binary plink file from the VCF genotype (not-imputed) file.
+# can run it in Calculon server, may need to change the modules loaded.
+
+# Convert the imputed VCF files into binary plink files, filtering out SNPs with INFO < 0.8:
 
 plink2 \
-       --vcf /your-path-to-the-genotype-file/genotype.vcf.gz \
-       --make-bed \
-       --out tmp-bfile
+        --vcf /your-path-to-the-vcf-imputed-files/${SLURM_ARRAY_TASK_ID}.vcf.gz 'dosage=DS' \
+        --exclude-if-info "INFO < 0.8" \
+        --make-bed \
+        --out /your-path-to-save-output/chr${SLURM_ARRAY_TASK_ID}
 
 module load gcc/9.3.0
 module load gcta/1.26.0
 
-# then use GCTA to get the GRM:
+# then use GCTA to obtain the GRM, one per chromosome:
 
-gcta64 --bfile chr${SLURM_ARRAY_TASK_ID} --chr ${SLURM_ARRAY_TASK_ID} --make-grm --out grm_chr${SLURM_ARRAY_TASK_ID} --thread-num 10
+gcta64 \
+       --bfile chr${SLURM_ARRAY_TASK_ID} \
+       --chr ${SLURM_ARRAY_TASK_ID} \
+       --make-grm \
+       --out grm_chr${SLURM_ARRAY_TASK_ID} \
+       --thread-num 3
