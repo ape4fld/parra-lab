@@ -1,0 +1,6 @@
+z;bcor;snp;config;cred;n_samples;log;
+sumstats-for-finemap-subset1.z;subset1.bcor;subset1.snp;subset1.config;subset1.cred;12398;subset1.log;
+sumstats-for-finemap-subset2.z;subset2.bcor;subset2.snp;subset2.config;subset2.cred;12398;subset2.log;
+sumstats-for-finemap-subset3.z;subset3.bcor;subset3.snp;subset3.config;subset3.cred;12398;subset3.log;
+sumstats-for-finemap-subset4.z;subset4.bcor;subset4.snp;subset4.config;subset4.cred;12398;subset4.log;
+sumstats-for-finemap-subset5.z;subset5.bcor;subset5.snp;subset5.config;subset5.cred;12398;subset5.log;
