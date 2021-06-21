@@ -16,9 +16,9 @@ home_dir=here()  # do not need to change this line
 # Other colour options here: http://sape.inf.usi.ch/quick-reference/ggplot2/colour
 mypalette <- c("#E69F00", "#56B4E9") # (default is blue and yellow)
 
-# Suffix name for the output saved manhattan plot:
+# Suffix name for the output manhattan plot:
 name_plot = "mypheno"
-man_filename <- paste("manhattan-gwas-", name_plot, sep="") # do not need to change this line
+man_filename <- paste("manhattan-TWAS-", name_plot, sep="") # do not need to change this line
 
 # Run the function:
 gg.manhattan(path = paste(home_dir,"/CPTP-data/GWAS/SAIGE/meta-SAIGE-BGEN/",sep=""), # can modify if need to change the path for where the data is
