@@ -1,0 +1,2 @@
+LDSC can compute several types of genome-wide analysis: https://github.com/bulik/ldsc/wiki
+I have used it to compute LDScore, to evaluate if there is inflation of p-values in the GWAS, that may be due to insufficient correction for population structure.
