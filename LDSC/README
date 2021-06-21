@@ -1,2 +1,15 @@
 LDSC can compute several types of genome-wide analysis: https://github.com/bulik/ldsc/wiki
 I have used it to compute LDScore, to evaluate if there is inflation of p-values in the GWAS, that may be due to insufficient correction for population structure.
+
+The general instructions are available on their tutorial: https://github.com/bulik/ldsc/wiki/LD-Score-Estimation-Tutorial
+
+Brief description of steps:
+1) Download and unzip the LD reference files (this is if using a cohort of European-related ancestry): 
+    wget https://data.broadinstitute.org/alkesgroup/LDSCORE/w_hm3.snplist.bz2
+    wget https://data.broadinstitute.org/alkesgroup/LDSCORE/1kg_eur.tar.bz2
+    tar -jxvf 1kg_eur.tar.bz2
+    
+2) Run the 'munge-sumstats.sh' script to adapt the GWAS summary statistics according to the 1000 Genomes SNPs. For a sample of European-related ancestry, 
+no need to compute your own LD scores.
+
+3) Run the 'compute-ldscore.sh' script.
