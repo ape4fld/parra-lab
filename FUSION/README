@@ -1,10 +1,11 @@
 FUSION is a program to perform TWAS from GWAS summary statistics: http://gusevlab.org/projects/fusion/
 
 You can follow the following steps to prepare GWAS summary statistics and perform TWAS (with already available eQTL weights):
-1) get the LD reference from genotype-level data
-2) adapt your GWAS summary statistics using an LDSC script: 'munge-sumstats.sh'
-3) run a TWAS with FUSION: 'run-fusion.sh'
-4) run a conditional TWAS with FUSION: 'run-fusion-cond.sh'
+1) get the LD reference from genotype-level data: 'get-LD-reference.sh'
+2) create a bim file for all SNPs 'create-bim-file.sh'
+3) adapt your GWAS summary statistics using an LDSC script: 'munge-sumstats.sh'
+4) run a TWAS with FUSION: 'run-fusion.sh'
+5) run a conditional TWAS with FUSION: 'run-fusion-cond.sh'
 
 Note: I have not generated myself eQTL weights, therefore there are no scripts for that, but there are many weights files available at the FUSION website 
 (under "Reference functional data"), which you can download and use. Otherwise, the website also has steps to generate your own weights.
