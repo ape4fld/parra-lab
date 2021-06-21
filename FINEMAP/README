@@ -6,7 +6,7 @@ Given that the program considers genotype dosages when calculating LD among SNPs
 Step 1: define the regions to FINEMAP -- here I used +/- 500 kilobases of each lead or top SNP from the GWAS.
 Step 2: create subsets of the GWAS summary statistics including only the top SNP +/- 500kb -- you can use the 'get-1Mb-regions.sh' script to create subsets.
 Step 3: create subsets of the genotype files including only the top SNP +/- kb and convert it to BGEN format -- using the 'get-bgen-subset-files.sh' script.
-Step 4: index BGEN files.
+Step 4: index BGEN files -- with the 'index-bgen.sh' script.
 Step 5: create master files for LDstore and FINEMAP.
 Step 6: calculate LD among SNPs on each subset using LDstore.
 Step 7: run FINEMAP on each subset.
