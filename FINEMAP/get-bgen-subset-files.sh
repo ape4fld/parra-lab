@@ -3,7 +3,7 @@
 #SBATCH --account=your-CC-account
 #SBATCH --time=1:00:00
 #SBATCH --job-name=qctool
-#SBATCH --array=1-10
+#SBATCH --array=1-5
 #SBATCH --output=slurm-%x.out
 #SBATCH --error=slurm-%x.err
 #SBATCH --mail-user=youremail@address.com
