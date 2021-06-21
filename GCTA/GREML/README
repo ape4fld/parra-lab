@@ -1,5 +1,5 @@
 Script to compute genetic correlations between to traits for which there is genotype-level data, using a restricted-maximum likelihood approach.
 There should be an overlap (can be partial overlap) between both phenotypes.
-https://cnsgenomics.com/software/gcta/#GREMLanalysis
+https://cnsgenomics.com/software/gcta/#BivariateGREMLanalysis
 
 Note: Another program to calculate genetic correlations widely used is using LDSC, but it requires large sample sizes.
