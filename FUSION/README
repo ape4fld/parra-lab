@@ -7,7 +7,7 @@ Some of these scripts were adapted from Karen Funderburk in Kevin Brown's lab.
 3) adapt your GWAS summary statistics using an LDSC script: 'munge-sumstats.sh'
 4) run a TWAS with FUSION: 'run-fusion.sh'
 5) run a conditional TWAS with FUSION: 'run-fusion-cond.sh'
-6) generate a miami plot with TWAS results (plotting the betas instead of pvalues as in the GWAS)
+6) generate a miami plot with TWAS results (plotting the betas instead of pvalues as in the GWAS): 'plot-TWAS.R' using the function 'ggmiami-function.R'.
 
 Note: I have not generated myself eQTL weights, therefore there are no scripts for that, but there are many weights files available at the FUSION website 
 (under "Reference functional data"), which you can download and use. Otherwise, the website also has steps to generate your own weights.
