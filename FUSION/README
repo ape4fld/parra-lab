@@ -7,5 +7,4 @@ Here you can find scripts to:
 - run a conditional TWAS with FUSION: 'run-fusion-cond.sh'
 
 Note: I have not generated myself eQTL weights, therefore there are no scripts for that, but there are many weights files available at the FUSION website 
-(under "Reference functional data"), which you can download and use.
-Otherwise, the website also has steps to generate your own weights.
+(under "Reference functional data"), which you can download and use. Otherwise, the website also has steps to generate your own weights.
