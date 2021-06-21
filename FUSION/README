@@ -4,7 +4,7 @@ You can follow the following steps to prepare GWAS summary statistics and perfor
 Some of these scripts were adapted from Karen Funderburk in Kevin Brown's lab.
 1) get the LD reference from genotype-level data: 'get-LD-reference.sh'
 2) create a bim file for all SNPs 'create-bim-file.sh'
-3) adapt your GWAS summary statistics using an LDSC script: 'munge-sumstats.sh'
+3) adapt your GWAS summary statistics using an LDSC script: 'munge-sumstats.sh' (need to uncompress it afterwards using gunzip filename)
 4) run a TWAS with FUSION: 'run-fusion.sh'
 5) run a conditional TWAS with FUSION: 'run-fusion-cond.sh'
 6) generate a miami plot with TWAS results (plotting the betas instead of pvalues as in the GWAS): 'plot-TWAS.R' using the function 'ggmiami-function.R'.
