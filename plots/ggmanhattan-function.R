@@ -1,6 +1,5 @@
 ## This function was adapted from: https://danielroelfs.com/blog/how-i-create-manhattan-plots-using-ggplot/
 
-
 install.packages("readr")
 install.packages("ggrepel")
 install.packages("RColorBrewer")
@@ -11,11 +10,12 @@ library(ggplot2)
 library(dplyr)
 library(RColorBrewer)
 
-gg.manhattan <- function(path, df, threshold, hlight, col, ylims, title){
+gg.manhattan <- function(path, df, threshold = 5e-8, colours = c("#E69F00", "#56B4E9"), ylims = c(0,100), title = ""){
   # read and format df
   setwd(path)
   df <- read.delim(file = df, header = TRUE, sep = " ", colClasses = c("character","integer", "numeric", "numeric"))
   colnames(df) <- c("SNP","CHR","BP","P")
+  hlight <- filter(df, P <= threshold) %>% .[,1]
   df <- filter(df, P <= 0.1)
   df.tmp <- df %>% 
     
@@ -35,8 +35,8 @@ gg.manhattan <- function(path, df, threshold, hlight, col, ylims, title){
     mutate( BPcum=BP+tot) %>%
     
     # Add highlight and annotation information
-    mutate( is_highlight=ifelse(SNP %in% hlight, "yes", "no")) %>%
-    mutate( is_annotate=ifelse(P < threshold, "yes", "no"))
+    mutate( is_highlight=ifelse(SNP %in% hlight, "yes", "no"))
+    # mutate( is_annotate=ifelse(P < threshold, "yes", "no"))
   
   # get chromosome center positions for x-axis
   axisdf <- df.tmp %>% group_by(CHR) %>% summarize(center=( max(BPcum) + min(BPcum) ) / 2 )
@@ -54,9 +54,8 @@ gg.manhattan <- function(path, df, threshold, hlight, col, ylims, title){
     ggtitle(paste0(title)) +
     labs(x = "Chromosome") +
     
-    # add genome-wide sig and sugg lines
-    geom_hline(yintercept = -log10(sig)) +
-    #geom_hline(yintercept = -log10(sugg), linetype="dashed") +
+    # add genome-wide significant line
+    geom_hline(yintercept = -log10(threshold)) +
     
     # Add highlighted points
     geom_point(data=subset(df.tmp, is_highlight=="yes"), color="red", size=3) +
