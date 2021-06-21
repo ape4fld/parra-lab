@@ -1,6 +1,6 @@
 z;bgen;bgi;ld;n_samples
-HC-M1-subset1-final-wmaf.z;HC-M1-chr5.bgen;HC-M1-chr5.bgen.bgi;HC-M1-subset1.ld;4744
-HC-M1-subset2-final-wmaf.z;HC-M1-chr6.bgen;HC-M1-chr6.bgen.bgi;HC-M1-subset2.ld;4744
-HC-M1-subset3-final-wmaf.z;HC-M1-chr11.bgen;HC-M1-chr11.bgen.bgi;HC-M1-subset3.ld;4744
-HC-M1-subset4-final-wmaf.z;HC-M1-chr11b.bgen;HC-M1-chr11b.bgen.bgi;HC-M1-subset4.ld;4744
-HC-M1-subset5-final-wmaf.z;HC-M1-chr11c.bgen;HC-M1-chr11c.bgen.bgi;HC-M1-subset5.ld;4744
+sumstats-for-finemap-subset1.z;/path-of-bgen-output-files/finemap-subset1.bgen;/path-of-bgen-output-files/finemap-subset1.bgen.bgi;subset1.ld;4744
+sumstats-for-finemap-subset2.z;/path-of-bgen-output-files/finemap-subset2.bgen;/path-of-bgen-output-files/finemap-subset2.bgen.bgi;subset2.ld;4744
+sumstats-for-finemap-subset3.z;/path-of-bgen-output-files/finemap-subset3.bgen;/path-of-bgen-output-files/finemap-subset3.bgen.bgi;subset3.ld;4744
+sumstats-for-finemap-subset4.z;/path-of-bgen-output-files/finemap-subset4.bgen;/path-of-bgen-output-files/finemap-subset4.bgen.bgi;subset4.ld;4744
+sumstats-for-finemap-subset5.z;/path-of-bgen-output-files/finemap-subset5.bgen;/path-of-bgen-output-files/finemap-subset5.bgen.bgi;subset5.ld;4744
