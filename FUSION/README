@@ -1,6 +1,10 @@
-FUSION is a program to perform TWAS from GWAS summary statistics.
+FUSION is a program to perform TWAS from GWAS summary statistics: http://gusevlab.org/projects/fusion/
+
 Here you can find scripts to:
 - adapt your GWAS summary statistics using an LDSC script
 - get the LD reference from genotype-level data
-- run a TWAS with FUSION
-- run a conditional TWAS with FUSION
+- run a TWAS with FUSION: 'run-fusion.sh'
+- run a conditional TWAS with FUSION: 'run-fusion-cond.sh'
+
+Note: I have not generated myself eQTL weights, therefore there are no scripts for that, but there are many weights files available at the FUSION website (under "Reference functional data"), which you can download and use.
+Otherwise, the website also has steps to generate your own weights.
