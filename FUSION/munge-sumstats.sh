@@ -21,6 +21,7 @@ module load ldsc/1.0.1
 python munge_sumstats.py \
 	--sumstats gwas-summary-stats.out \
 	--merge-alleles bim-file-all-chrs.txt \
+	--chunksize 500000 \    # this flag is optional, but I had memory errors if I didn't include it
 	--out GWAS-summary-stats-file-adapted
 
 # the script outputs a gzipped file, and it needs to be unzipped to use it on TWAS:
