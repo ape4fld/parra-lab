@@ -2,7 +2,7 @@
 
 #SBATCH --account=your-CC-account
 #SBATCH --time=2:00:00
-#SBATCH --job-name=make-grm-step2
+#SBATCH --job-name=create-grm-step2
 #SBATCH --output=slurm-%x.out
 #SBATCH --error=slurm-%x.err
 #SBATCH --mail-user=youremail@address.com
