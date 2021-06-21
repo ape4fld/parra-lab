@@ -1,11 +1,12 @@
 # This shell script can be used to get 1Mb regions from GWAS summary statistics and also output a file with the list of the SNPs on each region.
 # FINEMAP uses a specific order for the summary statistics: rsid chromosome position allele1 allele2 maf beta se (you can consult the details in the FINEMAP website)
-# but make sure that you have that specific format before running this shell script.
+# so make sure that you have your summary statistics in that specific format before running this shell script.
 
 # Files required to run the script:
 # 'gwas-sumstats-for-finemap.out' in the order mentioned above.
 # 'header-finemap.txt' is a text file with one row including the required header [rsid chromosome position allele1 allele2 maf beta se] separated by spaces.
-# 'index-SNPs-positions.txt' is a text file containing the chromosome and position information for each top/lead SNP that you'll finemap (one per row, no header), example:
+# 'index-SNPs-positions.txt' is a text file of two columns and N number of rows containing the chromosome and position information for each top/lead SNP that you'll finemap 
+# (one per row, no header), example:
 
 #####    1 417284949
 #####    5 127940401
