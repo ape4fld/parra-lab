@@ -1,4 +1,5 @@
 ## This function was adapted from: https://danielroelfs.com/blog/how-i-create-manhattan-plots-using-ggplot/
+# The function highlights in red SNPs that surpass the indicated threshold and draws a horizontal line on the threshold.
 
 install.packages("readr")
 install.packages("ggrepel")
