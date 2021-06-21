@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=generalq
 #SBATCH --job-name=index-bgen
-#SBATCH --array=1-10
+#SBATCH --array=1-5
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=youremail@address.com
 #SBATCH --mem=1gb
