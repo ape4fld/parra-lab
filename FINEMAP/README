@@ -29,3 +29,4 @@ If you want to compute the local LD of one or several SNPs in a subset (e.g. the
 This is useful if you want to do a regional plot of the FINEMAP results (PIP or Bayes Factor) with the datapoints corresponding to the LD by colours (see below).
 
 - To compute local LD you can use the script 'run-LDstore-local.sh'. Note that a different masterfile is used 'masterfile-LDstore-local-example.sh', which outputs readable LD.
+- To generate the regional LD plot with either the log10 Bayes Factor or the PIP on the Y-axis, you can use the 'FINEMAP-regional-plots.R' script.
