@@ -17,7 +17,7 @@ Step 5: create master files for LDstore and FINEMAP -- check LDstore/FINEMAP web
         which will output errors!
 
 Step 6: calculate LD among SNPs on each subset using LDstore -- using the 'run-LDstore.sh' script. Some common errors are due to blank spaces/typos in the masterfile, or due to
-        the GWAS summary statistics and BGEN files not having a full overlap. Be sure to check the ldstore.err output and also the ldstore.out for details if something went wrong.
+        the GWAS summary statistics and BGEN files not having a full overlap. Be sure to check the 'ldstore.err' file and also the 'ldstore.out' for details if something went wrong.
         Also helpful to check the size of the 'bcor' files if they are generated (with ls -l command). If empty, then is likely that is due to not full overlap.
 
 Step 7: run FINEMAP on each subset.
