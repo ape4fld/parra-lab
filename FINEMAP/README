@@ -21,3 +21,11 @@ Step 6: calculate LD among SNPs on each subset using LDstore -- using the 'run-L
         Also helpful to check the size of the 'bcor' files if they are generated (with ls -l command). If empty, then is likely that is due to not full overlap.
 
 Step 7: run FINEMAP on each subset -- using the 'run-FINEMAP.sh' script. If everything went fine with LDstore, there's normally no errors in FINEMAP (except due to typos in the masterfile).
+
+###############################
+###############################
+
+If you want to compute the local LD of one or several SNPs in a subset (e.g. the lead SNP) and the rest of the SNPs in the subset, you can do it using LDstore.
+This is useful if you want to do a regional plot of the FINEMAP results (PIP or Bayes Factor) with the datapoints corresponding to the LD by colours (see below).
+
+- To compute local LD you can use the script 'run-LDstore-local.sh'.
