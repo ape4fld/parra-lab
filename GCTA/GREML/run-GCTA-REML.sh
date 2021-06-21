@@ -17,7 +17,7 @@ module load gcta/1.26.0
 
 gcta64 \
   --reml-bivar 1 2 \
-  --grm your-grm \
+  --grm GRM-all-chrs \
   --pheno your-pheno-file.phe \
   --covar your-covar-file.txt \
   --qcovar your-quant-covar-file.txt \
