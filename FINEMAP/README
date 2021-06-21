@@ -16,6 +16,6 @@ Step 5: create master files for LDstore and FINEMAP -- check LDstore/FINEMAP web
         'dos2unix.exe' which is available in the Git shell. Additionally, be careful of not leaving spaces at the end of a row or blank rows at the end of the file,
         which will output errors!
 
-Step 6: calculate LD among SNPs on each subset using LDstore.
+Step 6: calculate LD among SNPs on each subset using LDstore -- using the 'run-LDstore.sh' script.
 
 Step 7: run FINEMAP on each subset.
