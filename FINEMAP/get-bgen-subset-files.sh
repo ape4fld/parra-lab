@@ -33,3 +33,8 @@ qctool_v2.0.7 \
 
 qctool_v2.0.7 \
         -g /path-of-bgen-output-files/finemap-subset${SLURM_ARRAY_TASK_ID}.bgen -snp-stats -osnp /path-of-bgen-output-files/finemap-subset${SLURM_ARRAY_TASK_ID}.txt
+        
+# You can check the overlap using the 'anti_join' function from Tidyverse on R, for example:
+# check1 <- anti_join(rsids_bgen, rsids_sumstats, by = "rsid")
+# check2 <- anti_join(rsids_sumstats, rsids_bgen, by = "rsid")
+# If both are empty, everything afterwards should run correctly. Otherwise, check for SNPs without rsID or duplicated SNPs.
