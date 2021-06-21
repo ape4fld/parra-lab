@@ -16,7 +16,7 @@ module load openmpi/2.0.2
 module load gcta/1.26.0
 
 gcta64 \
-  --reml-bivar 1 4 \
+  --reml-bivar 1 2 \
   --grm your-grm \
   --pheno your-pheno-file.phe \
   --covar your-covar-file.txt \
