@@ -28,4 +28,4 @@ Step 7: run FINEMAP on each subset -- using the 'run-FINEMAP.sh' script. If ever
 If you want to compute the local LD of one or several SNPs in a subset (e.g. the lead SNP) and the rest of the SNPs in the subset, you can do it using LDstore.
 This is useful if you want to do a regional plot of the FINEMAP results (PIP or Bayes Factor) with the datapoints corresponding to the LD by colours (see below).
 
-- To compute local LD you can use the script 'run-LDstore-local.sh'.
+- To compute local LD you can use the script 'run-LDstore-local.sh'. Note that a different masterfile is used 'masterfile-LDstore-local-example.sh', which outputs readable LD.
