@@ -22,3 +22,6 @@ python munge_sumstats.py \
 	--sumstats gwas-summary-stats.out \
 	--merge-alleles bim-file-all-chrs.txt \
 	--out GWAS-summary-stats-file-adapted
+
+# the script outputs a gzipped file, and it needs to be unzipped to use it on TWAS:
+gunzip GWAS-summary-stats-file-adapted.sumstats.gz
