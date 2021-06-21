@@ -14,12 +14,6 @@ source(here("path-to-function", "ggmiami-function.R"))
 # The default colours in the function are grey and black, but can change them by changing the values for 'mypalette':
 mypalette <- c("#000000", "#999999")
 
-# Enter the number of genes tested to calculate the p-value threshold:
-number_genes = 3998
-
-# Calculate the significant threshold (do not modify the following line):
-sig_thres = -1*log10(0.05/number_genes)
-
 # Suffix name for the output miami plot:
 name_plot = "mypheno"
 man_filename <- paste("miami-TWAS-", name_plot, sep="") # do not need to change this line
