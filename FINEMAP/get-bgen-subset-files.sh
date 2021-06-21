@@ -18,7 +18,7 @@
 
 # extract the chromosome number for each region:
 
-chr=$(sed -n ${SLURM_ARRAY_TASK_ID}p HC-M${model}-posminmax.txt | awk '{print $1}')
+chr=$(sed -n ${SLURM_ARRAY_TASK_ID}p index-SNPs-positions.txt | awk '{print $1}')
 
 # Step 1: convert from VCF to BGEN, which retains the imputation information:
 
