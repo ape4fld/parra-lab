@@ -21,8 +21,8 @@ name_plot = "mypheno"
 man_filename <- paste("manhattan-TWAS-", name_plot, sep="") # do not need to change this line
 
 # Run the function:
-gg.manhattan(path = paste(home_dir,"/CPTP-data/GWAS/SAIGE/meta-SAIGE-BGEN/",sep=""), # can modify if need to change the path for where the data is
-             df = "meta-HC-M1-short.out", # text file, separated by white space (sep= " "), with 4 columns: SNP, CHR, POS, PVALUE, in that order with header, but does not need to have a spefic header.
+gg.manhattan(path = paste(home_dir,"/path-to-data/",sep=""), # can modify if need to change the path for where the data is
+             df = "summary-stats-clean2.out", # text file, separated by white space (sep= " "), with 4 columns: SNP, CHR, POS, PVALUE, in that order with header, but does not need to have a spefic header.
              threshold = 1e-6, # Y-axis level to plot a horizontal line to delimit threshold (default = 5e-8)
              colours = mypalette, # default = blue and yellow
              ylims = c(0,90), # default = c(0,100)
