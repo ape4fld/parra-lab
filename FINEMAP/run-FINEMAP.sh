@@ -17,6 +17,6 @@ module load finemap/1.4
 # you can change the --n-causal-snps for any value between 1 and 20.
 # similar to LDstore, you can specify --dataset the subset you want to run.
 
-finemap --sss --in-files masterfile-finemap-example.txt --log --n-causal-snps 10 --std-effects --n-threads 5
+finemap --sss --in-files masterfile-FINEMAP-example.txt --log --n-causal-snps 10 --std-effects --n-threads 5
 
 # there are various outputs for each subset, check out the FINEMAP website for details and how to interpret them.
