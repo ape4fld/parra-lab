@@ -1,0 +1,6 @@
+https://cnsgenomics.com/software/gcta/#Overview
+
+This directory contains scripts to perform analysis on GCTA:
+1) MLMA: association analysis using mixed models
+2) COJO: conditional analysis of association with summary statistics
+3) GREML: perform genetic correlations between two phenotypes (case/control or quantitative)
