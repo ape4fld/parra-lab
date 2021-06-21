@@ -9,6 +9,8 @@
 #SBATCH --output=ldsc-compute.out
 #SBATCH --error=ldsc-compute.err
 
+# Note: I ran this in the Calculon server
+
 module load python/2.7.14
 module load ldsc/1.0.1
 
