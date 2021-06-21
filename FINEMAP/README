@@ -3,7 +3,7 @@ http://www.christianbenner.com/
 
 Given that the program considers genotype dosages when calculating LD among SNPs, the genotype files need to be adapted using LDStore: http://www.christianbenner.com/#
 
-Step 1: define the regions to FINEMAP -- here I used +/- 500 kilobases of each lead or top SNP from the GWAS.
+Step 1: define the regions to FINEMAP -- here I used +/- 500 kilobases of each lead or top SNP from the GWAS (take note of the chr and position of the lead SNP).
 
 Step 2: create subsets of the GWAS summary statistics including only the top SNP +/- 500kb -- you can use the 'get-1Mb-regions.sh' script to create subsets.
 
