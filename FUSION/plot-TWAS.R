@@ -27,7 +27,7 @@ gg.miami(path = paste(home_dir,"/path-to-data/",sep=""),
   hlight = mygenes, # optional: list of significant genes, default = NA
   colours = mypalette, # default is black and grey
   ylims = c(-30,30),  # default is c(-20,20)
-  title = "my GWAS")  # default is no title
+  title = "my TWAS")  # default is no title
 ggsave(file=paste(man_filename,".png", sep=""))
 
 
