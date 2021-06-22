@@ -21,7 +21,7 @@ for ((i=1;i<=$rows;i++))
 do
 	chr=$(sed -n ${i}p index-SNPs-positions.txt | awk '{print $1}')
 	pos=$(sed -n ${i}p index-SNPs-positions.txt | awk '{print $2}')
-  x=500000  # change value here if you want shorter/longer regions
+  	x=500000  # change value here if you want shorter/longer regions
 	pos1=$(echo "${pos} ${x}" | awk '{print $1 - $2}')
 	pos2=$(echo "${pos} ${x}" | awk '{print $1 + $2}')
 	awk -v tmp1=${chr} -v tmp2=${pos1} -v tmp3=${pos2} '$2==tmp1 && $3>=tmp2 && $3 <=tmp3' gwas-sumstats-for-finemap.out > tmp-sumstats-for-finemap-subset${i}.out
