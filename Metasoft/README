@@ -3,3 +3,5 @@ http://genetics.cs.ucla.edu/meta/
 This can be done by using the 'pre-meta-step1.sh' and 'pre-meta-step2.sh', followed by the run-meta.sh script.
 Similar to running GWAS, there is afterwards a script to get clean files 'post-meta.sh'.
 Note: I've been having issues accesing Metasoft website since a few months ago!
+
+For 'pre-meta-step2.sh' you may use the python script uploaded in this subdirectory 'plink2metasoft2.py', which is compatible with python 3.8 (whereas the original python script is compatible with old python versions).
